@@ -12,7 +12,7 @@ def faceDetect(img):
 	for(x,y,w,h) in faces:
 		img=cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),4)
 	#save file
-	path_file=('E:/blaa/SIH/static/%s.jpg' %uuid.uuid4().hex)
+	path_file=('https://github.com/Ishamudgalll/scan/tree/master/static/%s.jpg' %uuid.uuid4().hex)
 	cv2.imwrite(path_file,img)
 	return json.dumps(path_file)
 
